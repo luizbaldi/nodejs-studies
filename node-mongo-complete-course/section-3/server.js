@@ -4,8 +4,7 @@ const server = express();
 server.set('view engine', 'ejs');
 
 server.get('/', (req, res) => {
-    res.render('home/index
-    ');
+    res.render('home/index');
 });
 
 server.get('/formulario_inclusao_noticia', (req, res) => {
