@@ -1,11 +1,12 @@
 // Server
 const server = require('./config/server');
+const port = 9090;
 
-// Routes
+// Load routes
 require('./app/routes/home')(server);
 require('./app/routes/noticias')(server);
 require('./app/routes/admin')(server);
 
-server.listen(9090, () => {
-    console.log('Servidor iniciado!');
+server.listen(port, () => {
+    console.log(`Servidor iniciado na porta ${port}!`);
 });
